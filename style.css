@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    border: 0;
+}
+body{
+    background-color: #2C2B3D;
+    font-family: "Open Sans", sans-serif;
+    min-height: 100vh;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1083px;
+    margin: 0px auto 101px;
+    padding-top: 71px;
+}
+nav ul{
+    font-family: "JetBrains Mono", monospace;
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 500;
+    color: #FFFFFF;
+    display: flex;
+    gap: 64px;
+}
+main{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 1092px;
+    margin: 0px auto 127px;
+}
+main img{
+    animation: sacudir 10s infinite ease-in-out;
+  }
+
+  @keyframes sacudir {
+    0%, 80% {
+      transform: rotate(0deg);
+    }
+    82% {
+      transform: rotate(5deg);
+    }
+    84% {
+      transform: rotate(-5deg);
+    }
+    86% {
+      transform: rotate(4deg);
+    }
+    88% {
+      transform: rotate(-4deg);
+    }
+    90% {
+      transform: rotate(2deg);
+    }
+    92% {
+      transform: rotate(-2deg);
+    }
+    94%, 100% {
+      transform: rotate(0deg);
+    }
+  }
+.text p{
+    width: 604px;
+}
+h1{
+    font-family: "JetBrains Mono", monospace;
+    color: #FFFFFF;
+    font-weight: bold;
+    line-height: 40px;
+    font-size: 36px;
+
+}
+h1 span{
+    color: #00BFA6; 
+}
+nav img{
+    display: inline-block;
+    transition: 0.3s ease;
+}
+nav img:hover{
+    transform: scale(1.2);
+}
+.text p span{
+    color: #00BFA6;
+    font-weight: bold;
+}
+.text p{
+    margin: 59px 0 0px;
+    line-height: 28px;
+    font-size: 16px;
+    color: #C2C2C2;
+    text-align: center;
+}
+footer{
+    text-align: center;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 14px;
+    line-height: 28px;
+    color: #FFFFFF;
+    font-weight: 500px;
+
+}
+footer a{
+    font-family: "JetBrains Mono", monospace;
+    font-size: 14px;
+    line-height: 28px;
+    color: #FFFFFF;
+    font-weight: 500px;
+}
+.linha{
+    margin: 0 auto 27px;
+    width: 568px;
+    height: 0;
+    border: 1px solid #00BFA6;
+}
+#cadeado{
+    width: 51px;
+    height: 62px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 0px 0px 20px 20px;
+    transition: .3s ease-in-out;
+}
+#cadeado:hover{
+    transform: scale(.7);
+}
